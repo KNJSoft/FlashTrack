@@ -1,0 +1,1 @@
+sudo udevadm monitor --udev

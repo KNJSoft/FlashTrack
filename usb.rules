@@ -1,0 +1,2 @@
+ACTION=="mount", SUBSYSTEMS=="block", ENV{ID_REVISION}!="?*", ENV{ID_SERIAL}!="?*", ENV{ID_TYPE}=="disk", ENV{ID_BUS}!="ata", ENV{ID_BUS}!="scsi", ENV{ID_BUS}!="virtio", RUN+="/home/knjsoft/Shell/usb/script.sh mount %E{MNTPOINT}"
+ACTION=="unmount", SUBSYSTEMS=="block", ENV{ID_REVISION}!="?*", ENV{ID_SERIAL}!="?*", ENV{ID_TYPE}=="disk", ENV{ID_BUS}!="ata", ENV{ID_BUS}!="scsi", ENV{ID_BUS}!="virtio", RUN+="/home/knjsoft/Shell/usb/script.sh unmount %E{MNTPOINT}"
