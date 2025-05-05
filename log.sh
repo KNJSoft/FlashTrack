@@ -9,6 +9,6 @@ fichier_log="$1"
 
 regex='([0-9]{1,3}\.){3}[0-9]{1,3}'
 
-grep -Eo "$regex" "$fichier_log"
+ grep -Eo "$regex" "$fichier_log"
 
 exit 0
